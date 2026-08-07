@@ -1,0 +1,269 @@
+/* ===== Students Section ===== */
+.students-section {
+  background-color: var(--bg-gray);
+}
+
+.dark-mode .students-section {
+  background-color: var(--bg-dark);
+}
+
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.student-card {
+  background-color: var(--bg-light);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.dark-mode .student-card {
+  background-color: var(--bg-dark-light);
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.student-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-full);
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.student-name {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.student-gender {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.student-gender i {
+  margin-right: 0.25rem;
+}
+
+.student-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--primary);
+  color: white;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Homeroom Section ===== */
+.homeroom-section {
+  background-color: var(--bg-light);
+}
+
+.dark-mode .homeroom-section {
+  background-color: var(--bg-dark-light);
+}
+
+.homeroom-grid {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homeroom-card {
+  background-color: var(--bg-gray);
+  border-radius: var(--radius-xl);
+  padding: 3rem 2.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+  max-width: 400px;
+  width: 100%;
+  border-top: 4px solid var(--primary);
+}
+
+.dark-mode .homeroom-card {
+  background-color: var(--bg-dark);
+}
+
+.homeroom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}
+
+.homeroom-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-full);
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.homeroom-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.homeroom-role {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.homeroom-subject {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.homeroom-badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(126, 34, 206, 0.1);
+  color: var(--primary);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+/* ===== Gallery Section ===== */
+.gallery-section {
+  background-color: var(--bg-gray);
+}
+
+.dark-mode .gallery-section {
+  background-color: var(--bg-dark);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background-color: var(--bg-light);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.dark-mode .gallery-item {
+  background-color: var(--bg-dark-light);
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-full);
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--primary);
+  background-color: rgba(126, 34, 206, 0.1);
+}
+
+.gallery-item h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-item p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* ===== Contact Section - Updated Icons ===== */
+.instagram-icon {
+  color: #E1306C;
+  background-color: rgba(225, 48, 108, 0.1);
+}
+
+.youtube-icon {
+  color: #FF0000;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.tiktok-icon {
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .tiktok-icon {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.whatsapp-icon {
+  color: #25D366;
+  background-color: rgba(37, 211, 102, 0.1);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .students-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .student-card {
+    padding: 1rem;
+  }
+  
+  .student-avatar {
+    width: 55px;
+    height: 55px;
+    font-size: 1.5rem;
+  }
+  
+  .homeroom-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
