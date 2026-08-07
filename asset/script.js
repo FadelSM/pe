@@ -4,6 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initPreloader();
 
   const firebaseConfig = {
         apiKey: "AIzaSyDFRslV-wFwbmYGr7s0Lk17pXGm0Tq8NQM",
