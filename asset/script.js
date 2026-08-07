@@ -166,9 +166,8 @@ function initTypingEffect() {
   if (!typingElement) return;
   
   const phrases = [
-    'Selamat Datang di XI-1 Saintek ✨',
-    'Kelas Unggulan SMA PGRI 3 Jakarta 🏫',
-    '33 Siswa Berprestasi 🎓',
+    'Welcome To Website XI.1 Saintek',
+    'Kelas Lantai 3',
     'Bersama Kita Bisa! 💪'
   ];
   
