@@ -306,6 +306,23 @@ button {
     background-color: rgba(255,255,255,0.3);
 }
 
+.org-box strong { font-weight: 600; font-size: 0.8em; text-transform: uppercase; color: #5D3FD3; }
+.org-node::before {
+    content: ''; position: absolute; top: -20px; left: 50%;
+    transform: translateX(-50%); width: 2px; height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.org-node .org-box.parent::after {
+    content: ''; position: absolute; bottom: -20px; left: 50%;
+    transform: translateX(-50%); width: 2px; height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.org-level::after {
+    content: ''; position: absolute; top: 0; left: 25%;
+    right: 25%; height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 .logo .bracket {
   color: var(--primary);
 }
