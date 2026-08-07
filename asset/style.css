@@ -257,55 +257,43 @@ button {
 }
 
 .struktur-kelas {
-   padding: 40px 20px;
-   margin-top: 60px;
-   border-radius: 15px;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-radius: 15px;
 }
-
 .org-chart {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .org-level {
-   display: flex;
-   justify-content: center;
-   position: relative;
-   padding: 20px 0;
-   gap: 40px;
-   width: 100;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px 0;
+    gap: 40px;
+    width: 100%;
 }
-
 .org-node {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   position: relative;
-   gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 10px;
 }
-
 .org-box {
-   background: #f0f0f0;
-   color: #1a1a2e;
-   padding: 8px 20px;
-   border-radius: 20px;
-   text-align: center;
-   min-width: 120px;
-   box-shadow: 0 4px 10px rgba(0,0,0,0,2);
-   display: flex;
-   flex-direction: column;
-   font-size: 0.9em;
-   z-index: 2;
+    background: #f0f0f0;
+    color: #1a1a2e;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-align: center;
+    min-width: 120px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    z-index: 2;
 }
-
-.org-level.level-1::after, .org-level.level-1 .org-node::before { display: none; }
-.level-1 .org-box::after {
-    content: ''; position: absolute; bottom: -20px; left: 50%;
-    transform: translateX(-50%); width: 2px; height: 20px;
-    background-color: rgba(255,255,255,0.3);
-}
-
 .org-box strong { font-weight: 600; font-size: 0.8em; text-transform: uppercase; color: #5D3FD3; }
 .org-node::before {
     content: ''; position: absolute; top: -20px; left: 50%;
@@ -321,6 +309,12 @@ button {
     content: ''; position: absolute; top: 0; left: 25%;
     right: 25%; height: 2px;
     background-color: rgba(255, 255, 255, 0.3);
+}
+.org-level.level-1::after, .org-level.level-1 .org-node::before { display: none; }
+.level-1 .org-box::after {
+    content: ''; position: absolute; bottom: -20px; left: 50%;
+    transform: translateX(-50%); width: 2px; height: 20px;
+    background-color: rgba(255,255,255,0.3);
 }
 
 .logo .bracket {
