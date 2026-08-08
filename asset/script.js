@@ -5,17 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initPreloader();
-
-  const firebaseConfig = {
-        apiKey: "AIzaSyDFRslV-wFwbmYGr7s0Lk17pXGm0Tq8NQM",
-        authDomain: "website-kelas-v3.firebaseapp.com",
-        databaseURL: "https://website-kelas-v3-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "website-kelas-v3",
-        storageBucket: "website-kelas-v3.appspot.com",
-        messagingSenderId: "812973677269",
-        appId: "1:812973677269:web:6bd751c8d98bbb0822605c",
-        measurementId: "G-N9N6XH85KB"
-    };
   
   setTimeout(() => {
     initTheme();
