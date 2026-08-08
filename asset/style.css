@@ -256,6 +256,14 @@ button {
   font-weight: 700;
 }
 
+/* --- Gallery --- */
+.gallery-section { margin-top: 60px; }
+.slider { width: 100%; overflow: hidden; margin: auto; }
+.slide-track { display: flex; transition: transform 0.8s ease-in-out; }
+.slide { min-width: 100%; box-sizing: border-box; padding: 0 10px; }
+.slide img { width: 100%; height: 300px; object-fit: cover; border-radius: 10px; cursor: pointer; transition: transform 0.3s; }
+.slide img:hover { transform: scale(1.05); }
+
 .struktur-kelas {
     padding: 40px 20px;
     margin-top: 60px;
