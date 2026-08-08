@@ -888,10 +888,10 @@ button {
 }
 
 .reveal {
-   pasition: relative;
+   position: relative;
    opacity: 0;
    transform: translateY(100px);
-   transition: all 0.9s cubic.bebier(0.17, 0.55, 0.55, 1);
+   transition: all 0.9s cubic-bebier(0.17, 0.55, 0.55, 1);
 }
 
 .content-paragraph {
